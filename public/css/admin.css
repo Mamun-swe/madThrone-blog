@@ -8,7 +8,6 @@ body {
     width: 100px;
     height: 100px;
     overflow: hidden;
-    border: 1px solid red;
 }
 
 .profile-index .profile-img img {
@@ -19,6 +18,7 @@ body {
 /* End Profile */
 
 /* Posts */
+
 .posts-index .post-card .card-img img {
     width: 100%;
     min-height: 160px;
@@ -35,4 +35,5 @@ body {
         margin-bottom: 30px;
     }
 }
+
 /* End Posts */

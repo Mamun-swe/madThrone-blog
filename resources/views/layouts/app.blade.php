@@ -42,14 +42,20 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        @if(Auth()->User()->type == 'admin')
                         <li class="nav-item">
                             <a class="nav-link" href="">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Users</a>
+                            <a class="nav-link" href="{{route('admin.users.index')}}">Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('admin.post.index')}}">Posts</a>
+                            <a class="nav-link" href="{{route('admin.allblogs')}}">All Blogs</a>
+                        </li>
+                        @endif
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('admin.blog.index')}}">Your Blogs</a>
                         </li>
                             
                         <li class="nav-item dropdown">
