@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    Home
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                     <ul class="navbar-nav ml-auto">
                         @if(Auth()->User()->type == 'admin')
                         <li class="nav-item">
-                            <a class="nav-link" href="">Dashboard</a>
+                            <a class="nav-link" href="{{route('home')}}">Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('admin.users.index')}}">Users</a>

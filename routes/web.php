@@ -20,7 +20,6 @@ Route::get('/', function () {
 Auth::routes(['register' => false, 'reset' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
-
 Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'], function () {
 
     Route::get('/profile', 'Admin\ProfileController@index')->name('profile');

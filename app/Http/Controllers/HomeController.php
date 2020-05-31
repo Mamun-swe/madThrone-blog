@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $admin = User::where('type', '=', 'admin')->count();
+        $writter = User::where('type', '=', 'writter')->count();
+        $blog = Blog::count();
+        return view('home', compact('admin', 'writter', 'blog'));
     }
 }
