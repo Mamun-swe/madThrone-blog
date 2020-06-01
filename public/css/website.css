@@ -1,0 +1,233 @@
+@font-face {
+    font-family: BarlowCondensed-Light;
+    src: url('../assets/fonts/Barlow_Condensed/BarlowCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: BarlowCondensed-Regular;
+    src: url('../assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: BarlowCondensed-Bold;
+    src: url('../assets/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: Nunito-Regular;
+    src: url('../assets/fonts/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito-bold;
+    src: url('../assets/fonts/Nunito/Nunito-Bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    background: #1BFFFF url() repeat fixed top left;
+    background-color: #1BFFFF;
+    -webkit-overflow-scrolling: touch;
+    background: fixed -webkit-gradient(linear, left top, right bottom, from(#2E3192), to(#1BFFFF));
+    background: fixed -webkit-linear-gradient(left top, #2E3192, #1BFFFF);
+    background: fixed -o-linear-gradient(left top, #2E3192, #1BFFFF);
+    background: fixed linear-gradient(to right bottom, #2E3192, #1BFFFF);
+}
+
+/* Side Menu Section */
+
+.main-section .main-card {
+    background: rgba(0, 0, 0, 0);
+}
+
+.main-section .card .side-menu {
+    background: rgb(0, 116, 203);
+    background: linear-gradient(0deg, rgba(0, 116, 203, 1) 0%, rgba(58, 0, 136, 1) 100%);
+}
+
+.main-section .side-menu .logo {
+    width: 170px;
+}
+
+.main-section .side-menu .bar-box .btn {
+    background: rgb(47, 18, 136);
+    background: linear-gradient(104deg, rgba(47, 18, 136, 1) 0%, rgba(13, 90, 164, 1) 100%);
+}
+
+.main-section .side-menu .menu-items .btn {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-section .side-menu .menu-items .btn:hover {
+    background: rgba(158, 158, 158, 0.26);
+}
+
+.main-section .side-menu .menu-items .active {
+    background: rgba(158, 158, 158, 0.26);
+}
+
+.main-section .main-menu {
+    background: #e2e2e2d0;
+}
+
+@media(max-width: 992px) {
+    .main-section .main-card {
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    .main-section .side-menu .menu-items {
+        display: none;
+    }
+    .main-section .side-menu .menu-items .btn {
+        width: 100%;
+        border-radius: 0px;
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width: 992px) {
+    .main-section {
+        padding: 30px;
+    }
+    .main-section .main-card {
+        border-radius: 25px;
+        overflow: hidden;
+        position: relative;
+    }
+    .main-section .card .side-menu {
+        width: 300px !important;
+        padding-top: 100px;
+        position: fixed;
+        top: 30px;
+        bottom: 30px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .main-section .card .main-menu {
+        margin-left: 300px;
+    }
+    .main-section .side-menu .menu-items {
+        margin-top: 40px;
+    }
+    .main-section .side-menu .menu-items .btn {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* End Side Menu Section */
+
+/* Main Menu */
+
+/* Blog Card */
+
+.blogs .blog-card {
+    border: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    margin-bottom: 50px;
+}
+
+.blogs .blog-card .img-box {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.blogs .blog-card .card-body h4 {
+    font-size: 19px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blogs .blog-card .card-body p {
+    font-size: 13px;
+    font-family: Nunito-bold;
+}
+
+.blogs .blog-card .card-body {
+    position: relative;
+}
+
+.blogs .blog-card .card-body .read-more {
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 100%;
+}
+
+.blogs .blog-card .card-body .read-more .btn {
+    font-family: Nunito-bold;
+    font-size: 14px;
+    border-radius: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+@media(min-width: 992px) {
+    .blogs .blog-card .img-box {
+        max-height: 200px;
+        overflow: hidden;
+    }
+    .blogs .blog-card .card-img {
+        min-width: 100%;
+        min-height: 200px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .blogs .blog-card .img-box {
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .blogs .blog-card .card-img {
+        min-width: 100%;
+        min-height: 300px;
+    }
+}
+
+/* End Blog Card */
+
+/* End Main Menu */
+
+/* Read Blog */
+.read-blog .card{
+    border-radius: 25px;
+}
+
+.read-blog .profile-img-box{
+    width: 70px !important;
+    height: 70px;
+    overflow: hidden;
+}
+
+.read-blog .profile-img-box img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.read-blog .blogger-info p{
+    font-size: 14px;
+    line-height: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.read-blog .blog-content {
+    font-size: 17px;
+    line-height: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* End Read Blog */
