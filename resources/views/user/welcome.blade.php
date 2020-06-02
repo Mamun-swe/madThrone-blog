@@ -26,6 +26,10 @@
             </div>
             @endforeach
 
+            <div class="col-12">
+                {{$blogs->links()}}
+            </div>
+
         </div>
     </div>
 </div>
