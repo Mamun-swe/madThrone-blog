@@ -14,16 +14,16 @@
 
                             <div class="d-sm-flex mb-4 blogger-info pt-3">
                                 
-                                <div class="profile-img-box rounded-circle">
+                                <!-- <div class="profile-img-box rounded-circle">
                                     <img src="{{url('')}}/assets/images/users/{{$blog->profile_img}}" class="img-fluid">
-                                </div>
-                                <div class="pt-2 pl-sm-3">
+                                </div> -->
+                                <div class="pt-2">
                                     <p class="text-capitalize mb-0">{{$blog->name}}</p>
-                                    <p class="mb-0">
+                                    <!-- <p class="mb-0">
                                         <span class="text-capitalize">{{$blog->work_position}}</span>
                                         at
                                         <span class="text-capitalize"><b>{{$blog->company_name}}</b></span>
-                                    </p>
+                                    </p> -->
                                     <small>Posted on {{date('d M Y | H:i A', strtotime($blog->created_at))}}</small>
                                 </div>
                                 
