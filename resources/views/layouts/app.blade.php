@@ -20,6 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
     <script src="//cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+    <link rel="icon" href="{{asset('assets/images/static/favicon.ico')}}" type="image/gif" sizes="16x16">
 </head>
 <body>
     <div id="app">
