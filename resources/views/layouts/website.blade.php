@@ -69,7 +69,7 @@
             "facebook", "linkedin", "pinterest", "telegram", "twitter",
             ],
             text: "share with: ",
-            url: "https://madthrone.com/services"
+            url: window.location.href
         });
     </script>
     
